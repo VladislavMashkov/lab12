@@ -13,7 +13,7 @@ int main() {
     if(res == CURLE_OK) {
       long response_code;
       curl_easy_getinfo(curl, CURLINFO_RESPONSE_CODE, &response_code);
-      std::cout << "Responce code of http://google.ru"<< response_code << std::endl;
+      std::cout << "Responce code of http://google.ru "<< response_code << std::endl;
     }
     curl_easy_cleanup(curl);
   }
